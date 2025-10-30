@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nomee Skincare</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico" />
+
+</head>
+
+<body>
+    <header id="header">
+        <a href="./index.html" class="logo">
+            <img src="./assets/logo.png" alt="Company Logo" />
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+        <div>
+            <button> <a href="#cart">Cart</a></button>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section" id="home">
+            <div class="hero-content">
+                <h1>Healthy skin starts with natural care</h1>
+                <p>
+                    Discover the secrets to healthy skin with our natural skincare
+                    products that has been made with natural botanical to hydrate,
+                    repair, and protect your skin everyday.
+                </p>
+                <button><a href="#products">Shop Now</a></button>
+            </div>
+            <div class="hero-image">
+                <img src="./assets/hero-img.png" alt="Hero Image" class="hero-img" />
+            </div>
+        </section>
+        <section id="about">
+            <h2>Why Choose Us</h2>
+            <div class="about-cards">
+                <div class="about-card">
+                   
+                    <h3>Natural Ingredients</h3>
+                    <p>
+                        We use only the finest natural ingredients in our products to
+                        ensure the best care for your skin.
+                    </p>
+                </div>
+                <div class="about-card">
+                    
+                    <h3>Cruelty-Free</h3>
+                    <p>
+                        Our products are never tested on animals, ensuring ethical
+                        skincare solutions.
+                    </p>
+                </div>
+                <div class="about-card">
+                   
+                    <h3>Satisfaction Guaranteed</h3>
+                    <p>
+                        We stand by our products with a satisfaction guarantee to ensure
+                        you love your skincare experience.
+                    </p>
+                </div>
+                <div class="about-card">
+                    
+                    <h3>Dermatologist Tested</h3>
+                    <p>
+                        All our formulas are carefully tested by dermatologists to ensure
+                        safety and effectiveness for all skin types.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                   
+                    <h3>Eco-Friendly Packaging</h3>
+                    <p>
+                        We’re committed to sustainability by using recyclable,
+                        eco-friendly packaging that’s gentle on the planet.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Deep Hydration</h3>
+                    <p>
+                        Our products deliver lasting hydration to keep your skin soft,
+                        smooth, and radiant all day long.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-section">
+                <div class="product-card">
+                    <img src="./assets/cleanser.jpg" alt="image of cleanser" class="product-img">
+                    <h3>Gentle Cleanser</h3>
+                    <p>A refreshing facial cleanser that removes dirt and impurities while keeping your skin soft and
+                        hydrated.</p>
+                    <p class="price">#20,000</p>
+                    <button onclick="addToCart('Gentle Cleanser', 20000)">Add to Cart</button>
+
+                </div>
+
+                <div class="product-card">
+                    <img src="./assets/sunscreen.jpg" alt="image of sunscreen" class="product-img">
+                    <h3>SPF 50 Sunscreen</h3>
+                    <p>Lightweight, non-greasy sunscreen that protects your skin from harmful UV rays while nourishing
+                        it with antioxidants.</p>
+                    <p class="price">#20,000</p>
+                    <button onclick="addToCart('SPF 50 Sunscreen', 20000)">Add to Cart</a></button>
+                </div>
+
+                <div class="product-card">
+                    <img src="./assets/vitamin-c.jpg" alt="image of vitamin c" class="product-img">
+                    <h3>Vitamin C Serum</h3>
+                    <p>Brighten your skin tone with this potent Vitamin C serum that reduces dullness and promotes
+                        radiance.</p>
+                    <p class="price">#20,000</p>
+                    <button onclick="addToCart('Vitamin C Serum', 20000)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="./assets/exfoliant.jpg" alt="image of exfoliant" class="product-img">
+                    <h3>Exfoliating Scrub</h3>
+                    <p>Gently exfoliate away dead skin cells for smoother, glowing skin with this natural, grain-based
+                        formula.</p>
+                    <p class="price">#20,000</p>
+                    <button onclick="addToCart('Exfoliating Scrub', 20000)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="./assets/face-cream.jpg" alt="image of face cream" class="product-img">
+                    <h3>Hydrating Face Cream</h3>
+                    <p>Lock in moisture and restore elasticity with this rich face cream, perfect for daily hydration
+                        and nourishment.</p>
+                    <p class="price">#20,000</p>
+                    <button onclick="addToCart('Hydrating Face Cream', 20000)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="./assets/face-mask.jpg" alt="image of face mask" class="product-img">
+                    <h3>Revitalizing Face Mask</h3>
+                    <p>Rejuvenate tired skin with this revitalizing mask that deeply nourishes and restores your natural
+                        glow.</p>
+                    <p class="price">#20,000</p>
+                    <button onclick="addToCart('Revitalizing Face Mask', 20000)">Add to Cart</button>
+                </div>
+            </div>
+
+        </section>
+        <section id="cart">
+            <div>
+                <h2>Your Cart</h2>
+                <ul id="cart-items">
+                    <!-- Cart items here -->
+                </ul>
+
+                <p id="total-price">Total: #0</p>
+                <button id="checkout-button">Checkout</button>
+
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="contact-heading">Contact Us</h2>
+            <form class="form " id="contact-form">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required /><br />
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required /><br />
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required rows="4"></textarea><br />
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="success-message">
+                
+            </div>
+        </section>
+
+    </main>
+    <footer id="footer">
+        <div class="footer-sections">
+            <div>
+                <img src="./assets/logo.png" alt="Company Logo" />
+                <p class="footer-about">
+                    Discover our 100% organic skincare products that are made with
+                    natural botanicals to hydrate, repair, and protect your skin.
+                </p>
+                <ul class="social-icons">
+                    <li class="social-icon" data-testid="test-user-social-linkedin">
+                        <a href="https://www.linkedin.com/in/nofisatibrahim/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Go to LinkedIn">
+
+                            <img src="./assets/icons/linkedin.png" alt="linkedin icon" width="30px" height="30px">
+
+                        </a>
+                    </li>
+                    <li class="social-icon" data-testid="test-user-social-Github">
+                        <a href="https://github.com/Nahfeesah" target="_blank" aria-label="Go to Github page">
+
+                            <img src="./assets/icons/github.png" alt="github icon" width="30px" height="30px">
+
+                        </a>
+                    </li>
+                    <li class="social-icon"> <a href="https://x.com/techiefeesah?t=K8d537iKR4jYO0nA7Vfolw&s=09"
+                            target="_blank" aria-label="Go to Twitter page">
+
+                            <img src="./assets/icons/twitter.png" alt="twitter icon" width="30px" height="30px">
+
+                        </a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Info</h3>
+                <p>Email: inofisat5@gmail.com</p>
+                <p>Phone: +(234) 703 695 7558</p>
+                <p>Address: Ogba, Lagos State, Nigeria</p>
+            </div>
+        </div>
+
+        <p>&copy; 2025 Nomee Skincare. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
