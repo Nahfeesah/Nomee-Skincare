@@ -2,7 +2,13 @@
 
 A modern e-commerce website for premium skincare products. This project showcases a responsive design with product listings, shopping cart functionality, and a contact form.
 
-![Nomee Skincare Logo](./assets/logo.png)
+## 🖥️ Screenshot
+
+![Homepage Screenshot](assets/screenshot.png)
+
+![Products Screenshot](assets/screenshot-2.png)
+
+
 
 ## Overview
 
