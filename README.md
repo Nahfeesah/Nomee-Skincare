@@ -4,9 +4,9 @@ A modern e-commerce website for premium skincare products. This project showcase
 
 ## 🖥️ Screenshot
 
-![Homepage Screenshot](assets/screenshot.png)
+![Homepage Screenshot](assets/Screenshot.png)
 
-![Products Screenshot](assets/screenshot-2.png)
+![Products Screenshot](assets/Screenshot-2.png)
 
 
 
