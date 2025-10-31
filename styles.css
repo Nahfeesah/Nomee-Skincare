@@ -37,6 +37,7 @@ header .logo img{
     width: 50px;
     padding-left: 50px;
 }
+
 nav ul{
     list-style: none;
     display: flex;
@@ -50,6 +51,9 @@ nav ul li a{
     font-weight: bold;
     font-size:18px;
 }   
+#mobile-menu{
+    display: none;
+}
 .hero-section{
     margin-top:100px;
     display: flex;
@@ -162,7 +166,7 @@ button:hover{
 #footer{
     background-color: #7B0828;
     color: #fff;
-    text-align: center;
+    text-align: left;
     padding: 20px 70px;
     margin-top: 50px;   
 }
@@ -182,6 +186,7 @@ button:hover{
   max-width: 300px;
   text-align: left;
   line-height: 1;
+  padding-top: 10px;
 
 }
 #footer .quick-links{
@@ -198,9 +203,9 @@ button:hover{
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     margin: 0;
-    padding: 0;
+    padding: 20px 0;
 }
 #footer ul li{
     margin: 0 10px;
@@ -209,6 +214,12 @@ button:hover{
     color: #fff;
     text-decoration: none;
     font-size: 16px;
+}
+#footer ul li a i{
+    font-size: 28px;
+}
+#footer .copyright{
+    text-align: center;
 }
 
 #footer .contact-info{
@@ -265,8 +276,30 @@ button:hover{
     width: 40px;
     padding-left: 0px;
     }
+    header nav{
+    display: none;
+    }
+    nav.open{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        color: #fff;
+        width: 100%;
+        background-color: #7B0828;
+        padding: 10px 0;
+        z-index: 1;
+    }
     nav ul{
+        flex-direction: column;
+        align-items: center;
     gap: 10px;
+    }
+    #mobile-menu{
+    display: flex;
+    font-size: 28px;
+    padding-right: 15px;
     }
     .hero-section{
         flex-direction: column;

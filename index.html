@@ -7,6 +7,8 @@
     <title>Nomee Skincare</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico" />
+    <script src="https://kit.fontawesome.com/21a7de12c4.js" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -24,8 +26,12 @@
 
             </ul>
         </nav>
+
         <div>
             <button> <a href="#cart">Cart</a></button>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-hamburger"></i>
         </div>
     </header>
     <main>
@@ -204,28 +210,23 @@
                     <li class="social-icon" data-testid="test-user-social-linkedin">
                         <a href="https://www.linkedin.com/in/nofisatibrahim/" target="_blank" rel="noopener noreferrer"
                             aria-label="Go to LinkedIn">
-
-                            <img src="./assets/icons/linkedin.png" alt="linkedin icon" width="30px" height="30px">
-
+                             <i class="fa fa-linkedin"></i>
                         </a>
                     </li>
                     <li class="social-icon" data-testid="test-user-social-Github">
                         <a href="https://github.com/Nahfeesah" target="_blank" aria-label="Go to Github page">
-
-                            <img src="./assets/icons/github.png" alt="github icon" width="30px" height="30px">
-
+                             <i class="fa fa-github"></i>
                         </a>
                     </li>
                     <li class="social-icon"> <a href="https://x.com/techiefeesah?t=K8d537iKR4jYO0nA7Vfolw&s=09"
                             target="_blank" aria-label="Go to Twitter page">
-
-                            <img src="./assets/icons/twitter.png" alt="twitter icon" width="30px" height="30px">
-
+                                <i class="fa fa-twitter"></i>
                         </a></li>
                 </ul>
             </div>
             <div>
                 <h3>Quick Links</h3>
+                
                 <ul class="quick-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -241,7 +242,7 @@
             </div>
         </div>
 
-        <p>&copy; 2025 Nomee Skincare. All rights reserved.</p>
+        <p class="copyright">&copy; 2025 Nomee Skincare. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
